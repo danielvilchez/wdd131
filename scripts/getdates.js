@@ -1,3 +1,4 @@
+
 // Obtener el año actual
 const currentYear = new Date().getFullYear();
 // Mostrar el año en el elemento con id "currentyear" con el símbolo de copyright
@@ -9,3 +10,8 @@ const lastModifiedDate = document.lastModified;
 document.getElementById("lastModified").textContent = lastModifiedDate;
 
 
+/*
+let d = new Date();
+document.getElementById("currentYear").innerHTML = `&copy;${d.getFullYear()}`;
+document.querySelector('#lastModified').textContent = `Last Modification: ${document.lastModified}`;
+*/
