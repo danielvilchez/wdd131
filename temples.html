@@ -18,8 +18,7 @@
 <body>
     <header>
         <h1 class="handler">Temple Album</h1>
-        <!-- Enlace con texto alternativo para accesibilidad -->
-        <a href="#" id="hambutton" aria-label="Toggle menu">Menu</a>
+        <a href="#" id="hambutton"></a>
         <nav id="navmenu">
             <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
             <a href="#">Old</a>
@@ -33,56 +32,56 @@
         <h2>Home</h2>
         <div class="res-grid">
             <figure>
-                <img src="templeimages/englandtemple.jpg"
-                    srcset="templeimages/englandtemple.jpg 500w, templeimages/englandtemple.jpg 1000w"
+                <img src="images/sandiegolarge.jpg"
+                    srcset="images/sandiegosmall.jpg 500w, images/sandiegolarge.jpg 1000w"
                     sizes="(max-width: 600px) 500px, 1000px" alt="Preston England Temple">
                 <figcaption>Preston England</figcaption>
             </figure>
             <figure>
-                <img src="templeimages/hamilton-new-zealand-temple.jpg"
-                    srcset="templeimages/hamilton-new-zealand-temple.jpg 500w, templeimages/hamilton-new-zealand-temple.jpg 1000w"
+                <img src="images/sandiegolarge.jpg"
+                    srcset="images/sandiegosmall.jpg 500w, images/sandiegolarge.jpg 1000w"
                     sizes="(max-width: 600px) 500px, 1000px" alt="Hamilton New Zealand Temple">
                 <figcaption>Hamilton New Zealand</figcaption>
             </figure>
             <figure>
-                <img src="templeimages/hawaiitemple.jpg"
-                    srcset="templeimages/hawaiitemple.jpg 500w, templeimages/hawaiitemple.jpg 1000w"
+                <img src="images/sandiegolarge.jpg"
+                    srcset="images/sandiegosmall.jpg 500w, images/sandiegolarge.jpg 1000w"
                     sizes="(max-width: 600px) 500px, 1000px" alt="Laie Hawaii Temple">
                 <figcaption>Laie Hawaii</figcaption>
             </figure>
             <figure>
-                <img src="templeimages/manti-utah-temple.jpg"
-                    srcset="templeimages/manti-utah-temple.jpg 500w, templeimages/manti-utah-temple.jpg 1000w"
+                <img src="images/sandiegolarge.jpg"
+                    srcset="images/sandiegosmall.jpg 500w, images/sandiegolarge.jpg 1000w"
                     sizes="(max-width: 600px) 500px, 1000px" alt="Manti Utah Temple">
                 <figcaption>Manti Utah</figcaption>
             </figure>
             <figure>
-                <img src="templeimages/vernal-utah-temple.jpg"
-                    srcset="templeimages/vernal-utah-temple.jpg 500w, templeimages/vernal-utah-temple.jpg 1000w"
+                <img src="images/sandiegolarge.jpg"
+                    srcset="images/sandiegosmall.jpg 500w, images/sandiegolarge.jpg 1000w"
                     sizes="(max-width: 600px) 500px, 1000px" alt="Vernal Utah Temple">
                 <figcaption>Vernal Utah</figcaption>
             </figure>
             <figure>
-                <img src="templeimages/saltlake-temple.jpg"
-                    srcset="templeimages/saltlake-temple.jpg 500w, templeimages/saltlake-temple.jpg 1000w"
+                <img src="images/sandiegolarge.jpg"
+                    srcset="images/sandiegosmall.jpg 500w, images/sandiegolarge.jpg 1000w"
                     sizes="(max-width: 600px) 500px, 1000px" alt="Salt Lake Temple">
                 <figcaption>Salt Lake</figcaption>
             </figure>
             <figure>
-                <img src="templeimages/kyiv-ukraine-temple.jpg"
-                    srcset="templeimages/kyiv-ukraine-temple.jpg 500w, templeimages/kyiv-ukraine-temple.jpg 1000w"
+                <img src="images/sandiegolarge.jpg"
+                    srcset="images/sandiegosmall.jpg 500w, images/sandiegolarge.jpg 1000w"
                     sizes="(max-width: 600px) 500px, 1000px" alt="Kyiv Ukraine Temple">
                 <figcaption>Kyiv Ukraine</figcaption>
             </figure>
             <figure>
-                <img src="templeimages/los-angeles-temple.jpg"
-                    srcset="templeimages/los-angeles-temple.jpg 500w, templeimages/los-angeles-temple.jpg 1000w"
+                <img src="images/sandiegolarge.jpg"
+                    srcset="images/sandiegosmall.jpg 500w, images/sandiegolarge.jpg 1000w"
                     sizes="(max-width: 600px) 500px, 1000px" alt="Los Angeles California Temple">
                 <figcaption>Los Angeles California</figcaption>
             </figure>
             <figure>
-                <img src="templeimages/cardston-alberta-temple.jpg"
-                    srcset="templeimages/cardston-alberta-temple.jpg 500w, templeimages/cardston-alberta-temple.jpg 1000w"
+                <img src="images/sandiegolarge.jpg"
+                    srcset="images/sandiegosmall.jpg 500w, images/sandiegolarge.jpg 1000w"
                     sizes="(max-width: 600px) 500px, 1000px" alt="Cardston Alberta Temple">
                 <figcaption>Cardston Alberta</figcaption>
             </figure>
@@ -90,10 +89,8 @@
     </main>
 
     <footer>
-        <p>
-            <span id="currentyear"></span> ⭐ Daniel Vilchez Cardenas ⭐ Lima, Perú.
-        </p>
-        <p class="highlight" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+        <p><span id="currentYear"></span> Daniel Vilchez Cardenas Lima, Peru </p>
+        <p class="smaller" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
     </footer>
 </body>
 
