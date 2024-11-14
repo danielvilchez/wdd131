@@ -24,3 +24,13 @@ document.getElementById("currentyear").textContent = `© ${currentYear}`;
 const lastModifiedDate = document.lastModified;
 // Seleccionar el elemento con el id "lastModified" y mostrar la fecha
 document.getElementById("lastModified").textContent = lastModifiedDate;
+
+// Event listeners para manejar click y touch en los enlaces de navegación
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function () {
+        toggleActive(this);
+    });
+    anchor.addEventListener('touchstart', function () {
+        toggleActive(this);
+    });
+});
