@@ -1,12 +1,7 @@
 :root {
-  --red: rgb(178, 34, 34);
-  /* Un rojo más oscuro */
-  --green: rgba(0, 77, 47, 1);
-  /* Un verde más oscuro */
-  --white: #ffffff;
-  /* Blanco puro */
-  --text-dark: #333333;
-  /* Texto oscuro */
+  --red: rgba(120, 10, 40, 1);
+  /* Rojo más oscuro */
+  --green: rgba(0, 120, 73, 1);
 }
 
 * {
@@ -19,29 +14,24 @@ html,
 body {
   font-family: Lato, Helvetica, Arial, sans-serif;
   background-color: var(--red);
-  color: var(--white);
-  /* Texto blanco */
 }
 
 header,
 footer {
-  color: var(--white);
+  color: white;
   text-align: center;
   padding: 1.5rem;
   background-color: var(--red);
-  /* Fondo rojo oscuro */
+  /* Fondo rojo más oscuro */
 }
 
 h1 {
   font-size: 1.5rem;
-  color: var(--white);
-  /* Mantener contraste con fondo rojo */
 }
 
 aside {
   background-color: var(--green);
-  color: var(--white);
-  padding: 0.5rem;
+  padding: .5rem;
 }
 
 img {
@@ -51,37 +41,28 @@ img {
 
 h2 {
   padding: 1rem;
-  color: var(--white);
-  /* Buen contraste en el encabezado */
 }
 
 .card {
-  background-color: var(--white);
-  /* Fondo blanco */
-  color: var(--text-dark);
-  /* Texto oscuro */
+  background-color: white;
 }
 
 .col-2 {
   display: grid;
-  grid-gap: 0.5rem;
+  grid-gap: .5rem;
   grid-template-columns: 1fr 1fr;
   padding: 1rem;
 }
 
 .label {
   font-weight: bold;
-  font-size: 0.85rem;
+  font-size: .85rem;
   text-align: right;
-  color: var(--text-dark);
-  /* Contraste con fondo blanco */
 }
 
 .value {
-  font-size: 0.9rem;
+  font-size: .9rem;
   text-align: left;
-  color: var(--text-dark);
-  /* Contraste con fondo blanco */
 }
 
 .info,
@@ -94,8 +75,19 @@ h2 {
   height: auto;
 }
 
-@media (min-width: 600px) {
+.cls-1 {
+  fill: #231815;
+}
 
+.cls-2 {
+  fill: #d8bf9e;
+}
+
+.cls-3 {
+  fill: #f8b62d;
+}
+
+@media (min-width: 600px) {
   h1 {
     font-size: 3rem;
   }
@@ -107,14 +99,13 @@ h2 {
   .card {
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 2rem #000;
-    opacity: 0.9;
+    opacity: 0.8;
   }
 
   .card h2 {
-    margin: 0.5rem -0.5rem 0.5rem -0.5rem;
+    margin: .5rem -.5rem .5rem -.5rem;
     background-color: var(--green);
-    color: var(--white);
-    /* Buen contraste */
+    color: white;
     width: 90%;
     text-align: left;
   }
