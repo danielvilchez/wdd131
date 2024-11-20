@@ -1,7 +1,11 @@
 :root {
   --red: rgba(120, 10, 40, 1);
   /* Rojo más oscuro */
-  --green: rgba(0, 120, 73, 1);
+  --green: rgba(0, 85, 34, 1);
+  /* Verde oscuro */
+
+
+
 }
 
 * {
