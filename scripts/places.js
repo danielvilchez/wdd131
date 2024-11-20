@@ -7,13 +7,9 @@ function computeWindChillC(tempC, speed) {
 }
 
 let tempC = 10;
-let speed = 5;
+let speed = 11;
 if (tempC <= 10 && speed > 4.8) {
-  document.getElementById("wcf").innerHTML = `${computeWindChillC(tempC, speed).toFixed(1)} °C`;
+    document.getElementById("wcf").innerHTML = `${computeWindChillC(tempC, speed).toFixed(1)} °C`;
 } else {
     document.getElementById("wcf").innerHTML = "N/A";
 }
-
-// if(tempF <= 50 && speed > 3) {
-//   document.getElementById("wcf").innerHTML = `${computeWindChillF(tempF, speed).toFixed(1)} °F`;
-// }
