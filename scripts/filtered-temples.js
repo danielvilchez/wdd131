@@ -127,15 +127,15 @@ function filterTemples(filter) {
   const filteredTemples = temples.filter(temple => {
     switch (filter) {
       case 'old':
-        return new Date(temple.dedicated) < new Date('2000-01-01');
+        return new Date(temple.dedicated) < new Date('1900-01-01'); // Templos antes de 1900
       case 'new':
-        return new Date(temple.dedicated) >= new Date('2000-01-01');
+        return new Date(temple.dedicated) > new Date('2000-01-01'); // Templos después de 2000
       case 'large':
-        return temple.area > 50000;
+        return temple.area > 90000; // Templos mayores a 90,000 pies cuadrados
       case 'small':
-        return temple.area <= 50000;
+        return temple.area < 10000; // Templos menores a 10,000 pies cuadrados
       default:
-        return true;
+        return true; // Muestra todos los templos si no hay filtro
     }
   });
 
@@ -170,6 +170,7 @@ function filterTemples(filter) {
     document.querySelector(".res-grid").appendChild(card);
   });
 }
+
 
 // Función para resetear el filtro y mostrar todos los templos
 function resetTemples() {
