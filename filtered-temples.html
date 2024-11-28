@@ -20,18 +20,18 @@
     <a href="#" id="hambutton" aria-label="Open menu"></a>
 
     <nav id="navmenu">
-      <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
-      <a href="#">Old</a>
-      <a href="#">New</a>
-      <a href="#">Large</a>
-      <a href="#">Small</a>
+      <a href="#" id="filter-all" onclick="filterTemples('all')">Home</a>
+      <a href="#" id="filter-ancient" onclick="filterTemples('ancient')">Old</a>
+      <a href="#" id="filter-new" onclick="filterTemples('new')">New</a>
+      <a href="#" id="filter-large" onclick="filterTemples('large')">Large</a>
+      <a href="#" id="filter-small" onclick="filterTemples('small')">Small</a>
     </nav>
   </header>
 
   <main>
     <h2>Home</h2>
-    <div class="res-grid">
-
+    <div class="res-grid" id="temple-cards-container">
+      <!-- Las tarjetas de los templos se generarán dinámicamente aquí -->
     </div>
   </main>
 
