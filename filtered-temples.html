@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Filtered Temple Album</title>
-  <link rel="stylesheet" href="styles/filtered-temples.css" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="styles/filtered-temples.css">
-  </noscript>
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+  <script defer src="scripts/filtered-temples.js"></script>
 </head>
 
 <body>
   <header>
-    <h1>Filtered Temple Album</h1>
+    <h1 class="handler">Temple Album</h1>
+    <!-- Añadí el texto alternativo a través del aria-label -->
+    <a href="#" id="hambutton" aria-label="Toggle navigation menu"></a>
+    <nav id="navmenu">
+      <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>Temples</h2>
-    <div class="temple-gallery">
-      <img src="images/machu-picchu.webp" alt="Machu Picchu" loading="lazy">
-      <img src="images/temple2.webp" alt="Temple 2" loading="lazy">
-      <img src="images/temple3.webp" alt="Temple 3" loading="lazy">
-      <!-- Agregar más imágenes según sea necesario -->
+  <main>
+    <h2>Home</h2>
+    <div class="res-grid">
+
     </div>
-  </section>
+
+  </main>
 
   <footer>
-    <p>© 2024 Temple Album. Todos los derechos reservados.</p>
+    <p><span id="currentYear"></span> ⭐ Daniel Vilchez Cardenas ⭐ Lima, Perú.</p>
+    <p class="highlight" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
   </footer>
-
-  <script src="scripts/filtered-temples.js" defer></script>
-  <script>
-    // Asegúrate de que todas las imágenes tienen lazy loading
-    document.querySelectorAll("img").forEach(function (img) {
-      img.setAttribute("loading", "lazy");
-    });
-  </script>
 </body>
 
 </html>
