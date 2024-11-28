@@ -1,3 +1,12 @@
+// Obtener el año actual y mostrarlo en el footer
+const currentYear = new Date().getFullYear();
+document.getElementById("currentYear").textContent = `© ${currentYear}`;
+
+// Obtener la última fecha de modificación del documento
+const lastModifiedDate = document.lastModified;
+document.getElementById("lastModified").textContent = `Last Modification: ${lastModifiedDate}`;
+
+// Datos de los templos
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -81,8 +90,7 @@ const temples = [
   }
 ];
 
-createTempleCard();
-
+// Función para crear las tarjetas de los templos
 function createTempleCard() {
   temples.forEach(temple => {
     let card = document.createElement("section");
@@ -97,14 +105,10 @@ function createTempleCard() {
     dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
     area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
 
-    // Implementación de 'srcset' para ofrecer diferentes tamaños de imagen
     img.setAttribute("srcset", `${temple.imageUrl} 800w, ${temple.imageUrl} 400w`);
-    img.setAttribute("sizes", "(max-width: 600px) 400px, 800px");  // Definir tamaños según el ancho de la pantalla
-
+    img.setAttribute("sizes", "(max-width: 600px) 400px, 800px");
     img.setAttribute("alt", `${temple.templeName} Temple`);
-    img.setAttribute("loading", "lazy");  // Hacer que las imágenes se carguen solo cuando sean visibles
-
-    // Añadir atributos width y height explícitos para las imágenes
+    img.setAttribute("loading", "lazy");
     img.setAttribute("width", "400");
     img.setAttribute("height", "250");
 
@@ -117,3 +121,55 @@ function createTempleCard() {
     document.querySelector(".res-grid").appendChild(card);
   });
 }
+
+// Función para filtrar los templos según las categorías
+function filterTemples(filter) {
+  const filteredTemples = temples.filter(temple => {
+    switch (filter) {
+      case 'old':
+        return new Date(temple.dedicated) < new Date('2000-01-01');
+      case 'new':
+        return new Date(temple.dedicated) >= new Date('2000-01-01');
+      case 'large':
+        return temple.area > 50000;
+      case 'small':
+        return temple.area <= 50000;
+      default:
+        return true;
+    }
+  });
+
+  // Limpiar la galería y agregar los templos filtrados
+  document.querySelector(".res-grid").innerHTML = '';
+  filteredTemples.forEach(temple => {
+    let card = document.createElement("section");
+    let name = document.createElement("h3");
+    let location = document.createElement("p");
+    let dedication = document.createElement("p");
+    let area = document.createElement("p");
+    let img = document.createElement("img");
+
+    name.textContent = temple.templeName;
+    location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+    dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+    area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+
+    img.setAttribute("srcset", `${temple.imageUrl} 800w, ${temple.imageUrl} 400w`);
+    img.setAttribute("sizes", "(max-width: 600px) 400px, 800px");
+    img.setAttribute("alt", `${temple.templeName} Temple`);
+    img.setAttribute("loading", "lazy");
+    img.setAttribute("width", "400");
+    img.setAttribute("height", "250");
+
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedication);
+    card.appendChild(area);
+    card.appendChild(img);
+
+    document.querySelector(".res-grid").appendChild(card);
+  });
+}
+
+// Llamar la función de crear las tarjetas de templos cuando la página cargue
+createTempleCard();

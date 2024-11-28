@@ -21,24 +21,24 @@
 
     <nav id="navmenu">
       <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
-      <a href="#">Old</a>
-      <a href="#">New</a>
-      <a href="#">Large</a>
-      <a href="#">Small</a>
+      <a href="#" onclick="filterTemples('old')">Old</a>
+      <a href="#" onclick="filterTemples('new')">New</a>
+      <a href="#" onclick="filterTemples('large')">Large</a>
+      <a href="#" onclick="filterTemples('small')">Small</a>
     </nav>
   </header>
 
   <main>
     <h2>Home</h2>
-    <div class="res-grid">
-
-    </div>
+    <div class="res-grid"></div>
   </main>
 
   <footer>
     <p><span id="currentYear"></span> ⭐ Daniel Vilchez Cardenas ⭐ Lima, Perú.</p>
-    <p class="highlight" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+    <p class="highlight" id="lastModified">Last Modification: </p>
   </footer>
+
+  <script src="scripts/filtered-temples.js"></script>
 </body>
 
 </html>
