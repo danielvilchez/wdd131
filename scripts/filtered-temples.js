@@ -66,27 +66,27 @@ const temples = [
   },
   {
     templeName: "Arequipa Peru",
-    location: "Calle Cusco 380, Carmen Alto, Distrito De Cayma, Arequipa, Arequipa, Peru",
-    dedicated: "167th dedicated temple in operation",
-    area: 11500,
+    location: "Arequipa, Arequipa, Peru",
+    dedicated: "2019, December, 15",
+    area: 26969,
     imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/arequipa-peru-temple/arequipa-peru-temple-7186-main.jpg"
   },
   {
     templeName: "Madrid Spain",
-    location: "Calle del Templo N°2, Madrid, 28030 Madrid, Spain",
-    dedicated: "56th dedicated temple in operation",
-    area: 11500,
+    location: "Madrid, 28030 Madrid, Spain",
+    dedicated: "1999, March, 19",
+    area: 45800,
     imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/_temp/056-Madrid-Spain-Temple.jpg"
   },
   {
-    templeName: "Rome Italy",
-    location: "Via di Settebagni 376, Rome, RM, Italy",
-    dedicated: "162nd dedicated temple in operation",
+    templeName: "Salt Lake",
+    location: "Via di Settebagni 376, Rome, Italy",
+    dedicated: "1893, April, 6-24",
     area: 11500,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
+      "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
   }
 ];
 
