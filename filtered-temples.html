@@ -16,8 +16,10 @@
 <body>
   <header>
     <h1 class="handler">Temple Album</h1>
-    <!-- Añadí el texto alternativo a través del aria-label -->
-    <a href="#" id="hambutton" aria-label="Toggle navigation menu"></a>
+    <!-- Usamos un texto alternativo dentro del enlace para mejorar la accesibilidad -->
+    <a href="#" id="hambutton">
+      <span class="visually-hidden">Toggle navigation menu</span>
+    </a>
     <nav id="navmenu">
       <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
       <a href="#">Old</a>
