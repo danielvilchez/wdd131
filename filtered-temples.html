@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Temple Album</title>
-  <link rel="stylesheet" href="styles/filtered-temples.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Preload de Google Fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" as="style" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/filtered-temples.css">
   <script defer src="scripts/filtered-temples.js"></script>
 </head>
 
 <body>
   <header>
     <h1 class="handler">Temple Album</h1>
-    <!-- Cambié el enlace vacío por un botón con un aria-label -->
-    <a href="#" id="hambutton" aria-label="Toggle navigation menu">≡</a>
+    <a href="#" id="hambutton"></a>
     <nav id="navmenu">
       <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
       <a href="#">Old</a>
@@ -32,7 +32,6 @@
     <div class="res-grid">
 
     </div>
-
   </main>
 
   <footer>

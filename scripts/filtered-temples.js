@@ -93,6 +93,10 @@ function createTempleCard() {
     img.setAttribute("alt", `${temple.templeName} Temple`);
     img.setAttribute("loading", "lazy");
 
+    // Añadir atributos width y height explícitos para las imágenes
+    img.setAttribute("width", "400");
+    img.setAttribute("height", "250");
+
     card.appendChild(name);
     card.appendChild(location);
     card.appendChild(dedication);
@@ -101,4 +105,4 @@ function createTempleCard() {
 
     document.querySelector(".res-grid").appendChild(card);
   });
-  }
+}
