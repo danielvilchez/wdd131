@@ -171,5 +171,11 @@ function filterTemples(filter) {
   });
 }
 
+// Función para resetear el filtro y mostrar todos los templos
+function resetTemples() {
+  document.querySelector(".res-grid").innerHTML = '';
+  createTempleCard();
+}
+
 // Llamar la función de crear las tarjetas de templos cuando la página cargue
 createTempleCard();
