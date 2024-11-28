@@ -1,19 +1,3 @@
-let d = new Date();
-document.getElementById("currentYear").innerHTML = `&copy;${d.getFullYear()}`;
-document.querySelector('#lastModified').textContent = `Last Modification: ${document.lastModified}`;
-
-const hambutton = document.querySelector('#hambutton');
-
-hambutton.addEventListener('click', () => {
-  document.querySelector('h1').classList.toggle('show');
-  document.querySelector('#navmenu').classList.toggle('show');
-  hambutton.classList.toggle('show');
-});
-
-function toggleActive(element) {
-  element.classList.toggle("active");
-}
-
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -71,7 +55,6 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Añadidos los tres templos nuevos
   {
     templeName: "Arequipa Peru",
     location: "Calle Cusco 380, Carmen Alto, Distrito De Cayma, Arequipa, Arequipa, Peru",
@@ -113,9 +96,13 @@ function createTempleCard() {
     location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
     dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
     area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
-    img.setAttribute("src", temple.imageUrl);
+
+    // Implementación de 'srcset' para ofrecer diferentes tamaños de imagen
+    img.setAttribute("srcset", `${temple.imageUrl} 800w, ${temple.imageUrl} 400w`);
+    img.setAttribute("sizes", "(max-width: 600px) 400px, 800px");  // Definir tamaños según el ancho de la pantalla
+
     img.setAttribute("alt", `${temple.templeName} Temple`);
-    img.setAttribute("loading", "lazy");
+    img.setAttribute("loading", "lazy");  // Hacer que las imágenes se carguen solo cuando sean visibles
 
     // Añadir atributos width y height explícitos para las imágenes
     img.setAttribute("width", "400");
