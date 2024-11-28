@@ -70,8 +70,32 @@ const temples = [
     area: 116642,
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  },
+  // Añadidos los tres templos nuevos
+  {
+    templeName: "Arequipa Peru",
+    location: "Calle Cusco 380, Carmen Alto, Distrito De Cayma, Arequipa, Arequipa, Peru",
+    dedicated: "167th dedicated temple in operation",
+    area: 11500,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/arequipa-peru-temple/arequipa-peru-temple-7186-main.jpg"
+  },
+  {
+    templeName: "Madrid Spain",
+    location: "Calle del Templo N°2, Madrid, 28030 Madrid, Spain",
+    dedicated: "56th dedicated temple in operation",
+    area: 11500,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/_temp/056-Madrid-Spain-Temple.jpg"
+  },
+  {
+    templeName: "Rome Italy",
+    location: "Via di Settebagni 376, Rome, RM, Italy",
+    dedicated: "162nd dedicated temple in operation",
+    area: 11500,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
   }
-
 ];
 
 createTempleCard();
