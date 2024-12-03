@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manos Solidarias</title>
+    <meta name="author" content="Daniel G. Vilchez">
+
+    <!-- Añadir fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos y scripts -->
     <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="myproject.html">Inicio</a></li>
                 <li><a href="events.html">Eventos</a></li>
                 <li><a href="participation.html">Participación</a></li>
             </ul>
@@ -21,32 +30,31 @@
 
     <section id="home">
         <div class="intro">
-            <h1>Bienvenidos a Manos Solidarias</h1>
-            <p>Un lugar donde el compromiso social hace la diferencia.</p>
-            <img src="images/logo.png" alt="Logo de Manos Solidarias">
+            <h1>Welcome to Manos Solidarias</h1>
+            <p>A place where social commitment makes a difference.</p>
+            <img src="images/logo-manos-solidarias.jpg" alt="Logo de Manos Solidarias">
         </div>
 
         <div class="mission-vision">
-            <h2>Misión</h2>
-            <p>Fomentar el espíritu de colaboración y ayuda mutua a través de proyectos de voluntariado que impacten
-                positivamente en la comunidad.</p>
+            <h2>Mission</h2>
+            <p>Promote the spirit of collaboration and mutual aid through volunteer projects that have a
+                positive impact on the community.</p>
 
-            <h2>Visión</h2>
-            <p>Ser un referente de trabajo comunitario, donde cada voluntario sienta que su aporte genera un cambio
-                real.</p>
+            <h2>Vision</h2>
+            <p>To be a benchmark for community work, where each volunteer feels that their contribution generates real
+                change.</p>
         </div>
 
         <div class="cta">
-            <h3>¡Únete a nosotros y haz la diferencia!</h3>
-            <a href="participation.html" class="btn">Inscribirse</a>
+            <h3>Join us and make a difference!</h3>
+            <a href="participation.html" class="btn">Register</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Manos Solidarias. Todos los derechos reservados.</p>
+        <p><span id="currentyear"></span> ⭐ Daniel Vilchez Cardenas ⭐ Lima, Perú. </p>
+        <p class="highlight" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
     </footer>
-
-    <script src="js/scripts.js"></script>
 </body>
 
 </html>

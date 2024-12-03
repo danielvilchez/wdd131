@@ -35,6 +35,8 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    position: relative;
+    padding: 10px 0;
 }
 
 /* Home Page Styles */
@@ -115,4 +117,18 @@ form button {
     color: #4CAF50;
     text-decoration: none;
     margin: 0 10px;
+}
+
+/* Usar la fuente "Lora" para los encabezados */
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+}
+
+/* Usar la fuente "Lora" para el texto general */
+body,
+p,
+a {
+    font-family: 'Lora', serif;
 }
