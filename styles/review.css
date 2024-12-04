@@ -1,0 +1,120 @@
+:root {
+    --back1: rgba(44, 4, 44, 1);
+    --back2: rgba(44, 4, 44, .2);
+    --border: rgba(0, 0, 0, .1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+header,
+footer {
+    color: white;
+    background-color: var(--back1);
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: .75rem;
+}
+
+.review-summary {
+    background-color: var(--back2);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.review-summary p {
+    margin-bottom: .5rem;
+}
+
+.container {
+    margin: 2rem auto;
+    max-width: 700px;
+    padding: 1.5rem;
+    background-color: var(--back2);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+footer {
+    font-size: 0.875rem;
+}
+
+footer p {
+    margin-top: 1rem;
+}
+
+.counter {
+    background-color: var(--back1);
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.counter p {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Espaciado en la parte superior e inferior del párrafo de agradecimiento */
+.intro-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 2rem 0;
+    /* 2rem de espacio arriba y abajo */
+    text-align: center;
+    color: #4e4e4e;
+    /* Color gris oscuro */
+}
+
+/* Ajustando el espaciado en el contenedor del resumen */
+.review-summary {
+    background-color: var(--back2);
+    padding: 1.5rem;
+    /* Más espacio interno para mayor separación */
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    /* Separación superior del main */
+    margin-bottom: 1.5rem;
+    /* Separación inferior */
+}
+
+/* Estilos generales para el main, para darle margen a todo el contenido */
+main {
+    margin-top: 2rem;
+    /* Agregar margen en la parte superior */
+    margin-bottom: 2rem;
+    /* Agregar margen en la parte inferior */
+}

@@ -1,22 +1,59 @@
-// Incrementar el contador de revisiones utilizando localStorage
-document.addEventListener("DOMContentLoaded", () => {
-    // Verificar si el contador ya existe en localStorage
-    let reviewCount = localStorage.getItem("reviewCount");
+/*// Función para obtener los parámetros de la URL
+function getQueryParam(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+}
 
-    if (!reviewCount) {
-        // Si no existe, inicializarlo en 0
-        reviewCount = 0;
-    }
+// Al cargar la página, obtener los datos y mostrarlos
+window.onload = function () {
+    // Obtener los parámetros de la URL
+    const productName = getQueryParam('product_name');
+    const rating = getQueryParam('overall');
+    const installDate = getQueryParam('install');
+    const features = getQueryParam('features');
+    const writtenReview = getQueryParam('review');
+    const userName = getQueryParam('user');
 
-    // Incrementar el contador
-    reviewCount = parseInt(reviewCount, 10) + 1;
+    // Mostrar los datos en la página
+    document.getElementById('product_name').textContent = productName || 'No especificado';
+    document.getElementById('rating').textContent = rating ? `★ ${rating} estrellas` : 'No especificado';
+    document.getElementById('install_date').textContent = installDate || 'No especificado';
+    document.getElementById('features').textContent = features ? features.replace(/&/g, ', ') : 'No especificado';
+    document.getElementById('written_review').textContent = writtenReview || 'No especificado';
+    document.getElementById('user_name').textContent = userName || 'Anónimo';
 
-    // Guardar el nuevo valor en localStorage
-    localStorage.setItem("reviewCount", reviewCount);
+    // Contar cuántas reseñas se han completado
+    let reviewCount = localStorage.getItem('reviewCount');
+    reviewCount = reviewCount ? parseInt(reviewCount) : 0;
+    document.getElementById('review_count').textContent = reviewCount;
+};*/
 
-    // Mostrar el contador en la página
-    const counterDisplay = document.getElementById("review-counter");
-    if (counterDisplay) {
-        counterDisplay.textContent = `Total Reviews Submitted: ${reviewCount}`;
-    }
-});
+// Función para obtener los parámetros de la URL
+function getQueryParam(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+}
+
+// Al cargar la página, obtener los datos y mostrarlos
+window.onload = function () {
+    // Obtener los parámetros de la URL
+    const productName = getQueryParam('product_name');
+    const rating = getQueryParam('overall');
+    const installDate = getQueryParam('install');
+    const features = getQueryParam('features');
+    const writtenReview = getQueryParam('review');
+    const userName = getQueryParam('user');
+
+    // Mostrar los datos en la página
+    document.getElementById('product_name').textContent = productName || 'No especificado';
+    document.getElementById('rating').textContent = rating ? `★ ${rating} estrellas` : 'No especificado';
+    document.getElementById('install_date').textContent = installDate || 'No especificado';
+    document.getElementById('features').textContent = features ? features.replace(/&/g, ', ') : 'No especificado';
+    document.getElementById('written_review').textContent = writtenReview || 'No especificado';
+    document.getElementById('user_name').textContent = userName || 'Anónimo';
+
+    // Contar cuántas reseñas se han completado
+    let reviewCount = localStorage.getItem('reviewCount');
+    reviewCount = reviewCount ? parseInt(reviewCount) : 0;
+    document.getElementById('review_count').textContent = reviewCount;
+};

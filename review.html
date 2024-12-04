@@ -4,21 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Confirmation</title>
+    <title>Product Review Summary</title>
     <link rel="stylesheet" href="styles/review.css">
     <script defer src="scripts/review.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Thank You for Your Review!</h1>
+        <h1>Resumen de tu Revisión</h1>
     </header>
+
     <main>
-        <p>Your review has been successfully submitted.</p>
-        <p id="review-counter"></p>
+        <p class="intro-text">Gracias por completar tu revisión. Aquí está el resumen de los datos que has
+            proporcionado:</p>
+
+        <div id="summary" class="review-summary">
+            <p><strong>Producto Seleccionado:</strong> <span id="product_name"></span></p>
+            <p><strong>Calificación:</strong> <span id="rating"></span></p>
+            <p><strong>Fecha de Instalación:</strong> <span id="install_date"></span></p>
+            <p><strong>Características útiles:</strong> <span id="features"></span></p>
+            <p><strong>Reseña escrita:</strong> <span id="written_review"></span></p>
+            <p><strong>Nombre de Usuario:</strong> <span id="user_name"></span></p>
+            <p><strong>Total de reseñas completadas:</strong> <span id="review_count"></span></p>
+        </div>
     </main>
+
     <footer>
-        <p>&copy; 2024 Daniel Vilchez Cardenas</p>
+        <p>© Daniel Vilchez Cardenas ⭐ Lima, Perú.</p>
     </footer>
 </body>
 

@@ -19,11 +19,9 @@
 <body>
   <header>
     <h1>Product Review</h1>
-
   </header>
   <main>
     <form action="review.html" method="get">
-
       <div class="item">
         <label for="product_name">Product Name</label>
         <select id="product_name" name="product_name" required>
@@ -42,17 +40,18 @@
           <label for="overall-3">&star;&star;&star;</label>
           <label for="overall-4">&star;&star;&star;&star;</label>
           <label for="overall-5">&star;&star;&star;&star;&star;</label>
-          <input type="radio" id="overall-1" name="overall" required>
-          <input type="radio" id="overall-2" name="overall" required>
-          <input type="radio" id="overall-3" name="overall" required>
-          <input type="radio" id="overall-4" name="overall" required>
-          <input type="radio" id="overall-5" name="overall" required>
+          <input type="radio" id="overall-1" name="overall" value="1" required>
+          <input type="radio" id="overall-2" name="overall" value="2" required>
+          <input type="radio" id="overall-3" name="overall" value="3" required>
+          <input type="radio" id="overall-4" name="overall" value="4" required>
+          <input type="radio" id="overall-5" name="overall" value="5" required>
         </div>
       </div>
 
       <div class="item">
-        <label>Date of Installation
-          <input type="date" id="install" name="install" required></label>
+        <label for="install">Date of Installation
+          <input type="date" id="install" name="install" required>
+        </label>
       </div>
 
       <div class="item">
@@ -60,13 +59,13 @@
           <em>(Check all that apply)</em>
         </p>
         <div class="checkbox-group">
-          <input type="checkbox" id="durablility" name="durability" value="durability">
-          <label for="durablility">Durability</label>
-          <input type="checkbox" id="ease" name="ease" value="ease">
+          <input type="checkbox" id="durability" name="features" value="Durability">
+          <label for="durability">Durability</label>
+          <input type="checkbox" id="ease" name="features" value="Ease of Use">
           <label for="ease">Ease of Use</label>
-          <input type="checkbox" id="performance" name="performance" value="performance">
+          <input type="checkbox" id="performance" name="features" value="Performance">
           <label for="performance">Performance</label>
-          <input type="checkbox" id="design" name="design" value="design">
+          <input type="checkbox" id="design" name="features" value="Design">
           <label for="design">Design</label>
         </div>
       </div>
@@ -82,13 +81,25 @@
       </div>
 
       <input type="submit" value="Post Review">
-
     </form>
   </main>
+
   <footer>
     <p><span id="currentyear"></span> ⭐ Daniel Vilchez Cardenas ⭐ Lima, Perú. </p>
     <p class="highlight" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
   </footer>
+
+  <!-- Script to increment review count on form submission -->
+  <script>
+    document.querySelector('form').addEventListener('submit', function () {
+      // Obtener el número de reseñas guardadas en localStorage
+      let reviewCount = localStorage.getItem('reviewCount');
+      reviewCount = reviewCount ? parseInt(reviewCount) : 0;
+
+      // Incrementar el contador de reseñas
+      localStorage.setItem('reviewCount', reviewCount + 1);
+    });
+  </script>
 </body>
 
 </html>
