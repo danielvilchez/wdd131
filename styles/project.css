@@ -1,19 +1,19 @@
 /* Estilos generales */
 body {
     font-family: 'Lora', serif;
-    background-color: #f4f4f4;
+    background-color: #e0e0e0;
+    /* Fondo más oscuro para mejorar el contraste */
     color: #333;
-    /* Cambiado de #555 a #333 para mayor contraste */
+    /* Color de texto más oscuro */
     margin: 0;
     padding: 0;
     text-align: center;
-    /* Centramos el contenido */
 }
 
 header {
-    background-color: #008CBA;
+    background-color: #005f73;
+    /* Azul más oscuro para mejorar el contraste */
     color: white;
-    /* Se mantiene, blanco es adecuado */
     padding: 10px 0;
     text-align: center;
 }
@@ -32,14 +32,12 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    /* Buen contraste */
     font-weight: bold;
 }
 
 /* Sección de la Página de Inicio */
 #home {
-    background-color: #f9f9f9;
-    /* Fondo gris claro para mejor contraste */
+    background-color: white;
     padding: 30px 10%;
     text-align: center;
 }
@@ -50,13 +48,14 @@ nav ul li a {
 
 #home h1 {
     font-size: 2.5em;
-    color: #008CBA;
+    color: #005f73;
+    /* Azul más oscuro para el encabezado */
 }
 
 #home p {
     font-size: 1.2em;
     color: #333;
-    /* Mejor contraste */
+    /* Texto oscuro para mejorar la legibilidad */
 }
 
 #home img {
@@ -64,7 +63,6 @@ nav ul li a {
     height: auto;
     margin-top: 20px;
     width: 200px;
-    /* Ajusta el tamaño del logo */
     margin-bottom: 20px;
 }
 
@@ -75,13 +73,13 @@ nav ul li a {
 
 #home .mission-vision h2 {
     font-size: 2em;
-    color: #008CBA;
+    color: #005f73;
+    /* Azul más oscuro */
 }
 
 #home .mission-vision p {
     font-size: 1.1em;
-    color: #333;
-    /* Mejor contraste */
+    color: #555;
 }
 
 /* Botón de llamada a la acción (Join) */
@@ -91,7 +89,8 @@ nav ul li a {
 
 #home .cta .btn {
     padding: 10px 20px;
-    background-color: #008CBA;
+    background-color: #005f73;
+    /* Azul más oscuro */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -101,8 +100,8 @@ nav ul li a {
 }
 
 #home .cta .btn:hover {
-    background-color: #005f73;
-    /* Tono más oscuro para mayor contraste */
+    background-color: #004051;
+    /* Azul aún más oscuro para el hover */
 }
 
 /* Sección de Preguntas Comunes */
@@ -116,7 +115,8 @@ nav ul li a {
 
 #home .scenarios h2 {
     font-size: 2em;
-    color: #008CBA;
+    color: #005f73;
+    /* Azul más oscuro */
 }
 
 #home .scenarios ul {
@@ -126,22 +126,21 @@ nav ul li a {
 
 #home .scenarios li {
     font-size: 1.1em;
-    color: #333;
-    /* Mejor contraste */
+    color: #555;
     margin-bottom: 15px;
 }
 
 /* Eventos */
 #events {
-    background-color: #f9f9f9;
-    /* Fondo gris claro para mejor contraste */
+    background-color: white;
     padding: 30px 10%;
     text-align: center;
 }
 
 #events h1 {
     font-size: 2.5em;
-    color: #008CBA;
+    color: #005f73;
+    /* Azul más oscuro */
 }
 
 #events .event-list {
@@ -154,8 +153,7 @@ nav ul li a {
 #events .event-item {
     width: 280px;
     margin: 20px;
-    background-color: #ffffff;
-    /* Fondo blanco para mejorar la visibilidad */
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -171,13 +169,11 @@ nav ul li a {
 #events .event-item h2 {
     font-size: 1.8em;
     color: #333;
-    /* Mejor contraste */
 }
 
 #events .event-item p {
     font-size: 1.1em;
-    color: #333;
-    /* Mejor contraste */
+    color: #555;
 }
 
 #events .cta {
@@ -186,7 +182,8 @@ nav ul li a {
 
 #events .cta .btn {
     padding: 10px 20px;
-    background-color: #008CBA;
+    background-color: #005f73;
+    /* Azul más oscuro */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -194,13 +191,14 @@ nav ul li a {
 }
 
 #events .cta .btn:hover {
-    background-color: #005f73;
-    /* Sombra más oscura */
+    background-color: #004051;
+    /* Azul más oscuro para el hover */
 }
 
 /* Footer */
 footer {
-    background-color: #008CBA;
+    background-color: #005f73;
+    /* Azul más oscuro */
     color: white;
     text-align: center;
     padding: 10px;
@@ -220,14 +218,11 @@ footer .highlight {
 .color-scheme,
 .typography {
     background-color: transparent;
-    /* Se elimina el fondo */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: none;
-    /* Se elimina la sombra */
     text-align: center;
-    /* Se centra el texto */
 }
 
 /* Medios Responsivos */
