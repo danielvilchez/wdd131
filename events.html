@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events - Manos Solidarias</title>
+    <title>Eventos - Manos Solidarias</title>
     <meta name="author" content="Daniel G. Vilchez">
 
     <!-- Añadir fuente -->
@@ -14,7 +14,6 @@
 
     <!-- Estilos y scripts -->
     <link rel="stylesheet" href="styles/project.css">
-    <link rel="stylesheet" href="styles/project.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 
@@ -22,44 +21,55 @@
     <header>
         <nav>
             <ul>
-                <li><a href="myproject.html">Home</a></li>
+                <li><a href="siteplan.html">Home</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="participation.html">Participation</a></li>
             </ul>
         </nav>
+        <div class="site-name">
+            <h1>Manos Solidarias</h1>
+            <p>Participate, help and make a difference!</p>
+        </div>
     </header>
 
     <section id="events">
-        <h1>Calendar of events</h1>
+        <h1>Upcoming Events</h1>
 
-        <div class="event">
-            <img src="images/event1.jpg" alt="Evento 1">
-            <h2>Clothing Collection Event</h2>
-            <p>Date: December 15, 2024</p>
-            <p>Description: Help us collect clothes for those most in need.</p>
-            <a href="participation.html" class="btn">Register</a>
+        <div class="event-list">
+            <!-- Ejemplo de Evento 1 -->
+            <div class="event-item">
+                <img src="images/event1.jpg" alt="Evento 1">
+                <h2>Clothing Collection Event</h2>
+                <p> Help us collect clothes for those most in need!</p>
+                <p>Date: December 20, 2024</p>
+            </div>
+
+            <!-- Ejemplo de Evento 2 -->
+            <div class="event-item">
+                <img src="images/event2.jpg" alt="Evento 2">
+                <h2>Let's clean up the park</h2>
+                <p>Take part in our central park cleaning and beautification day.</p>
+                <p>Date: December 20, 2024</p>
+            </div>
+
+            <!-- Ejemplo de Evento 3 -->
+            <div class="event-item">
+                <img src="images/event3.jpg" alt="Evento 3">
+                <h2>Reforestation Campaign</h2>
+                <p>Help us reforest green areas and improve the environment.</p>
+                <p>Date: December 25, 2024</p>
+            </div>
         </div>
 
-        <div class="event">
-            <img src="images/event2.jpg" alt="Evento 2">
-            <h2>Let's clean up the park</h2>
-            <p>Date: December 20, 2024</p>
-            <p>Description: Participate in our day of cleaning and beautification of the central park.</p>
-            <a href="participation.html" class="btn">Register</a>
-        </div>
-
-        <div class="event">
-            <img src="images/event3.jpg" alt="Evento 3">
-            <h2>Reforestation Campaign</h2>
-            <p>Date: December 25, 2024</p>
-            <p>Description: Help us reforest green areas and improve the environment.</p>
-            <a href="participation.html" class="btn">Register</a>
+        <div class="cta">
+            <h3>Are you interested in participating?</h3>
+            <a href="participation.html" class="btn">Register now</a>
         </div>
     </section>
 
     <footer>
         <p><span id="currentyear"></span> ⭐ Daniel Vilchez Cardenas ⭐ Lima, Perú. </p>
-        <p class="highlight" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+        <p class="highlight" id="lastModified">Última Modificación: 01/01/1970 12:00:00</p>
     </footer>
 </body>
 

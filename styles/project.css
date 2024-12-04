@@ -1,133 +1,268 @@
-/* General Styles */
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lora', serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    text-align: center;
+    /* Centramos el contenido */
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #008CBA;
+    color: white;
     padding: 10px 0;
     text-align: center;
 }
 
-header nav ul {
-    list-style-type: none;
+nav ul {
+    list-style: none;
     padding: 0;
+    text-align: center;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li a {
     text-decoration: none;
-}
-
-footer {
-    background-color: #4CAF50;
     color: white;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    bottom: 0;
-    position: relative;
-    padding: 10px 0;
+    font-weight: bold;
 }
 
-/* Home Page Styles */
+/* Sección de la Página de Inicio */
 #home {
+    background-color: white;
+    padding: 30px 10%;
     text-align: center;
-    padding: 50px;
-    background-color: #fff;
 }
 
-#home img {
-    width: 200px;
-    height: auto;
-    margin-top: 20px;
-}
-
-.mission-vision {
-    padding: 30px;
-}
-
-.mission-vision h2 {
-    color: #4CAF50;
-}
-
-.cta {
-    margin-top: 20px;
-}
-
-/* Events Page Styles */
-#events {
-    text-align: center;
-    padding: 50px;
-}
-
-.event {
-    margin: 20px;
-}
-
-.event img {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
+#home .intro {
     margin-bottom: 20px;
 }
 
-.event h2 {
-    color: #4CAF50;
+#home h1 {
+    font-size: 2.5em;
+    color: #008CBA;
 }
 
-.btn {
-    background-color: #4CAF50;
-    color: white;
+#home p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#home img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    width: 200px;
+    /* Ajusta el tamaño del logo */
+    margin-bottom: 20px;
+}
+
+/* Misión y Visión */
+#home .mission-vision {
+    margin-top: 40px;
+}
+
+#home .mission-vision h2 {
+    font-size: 2em;
+    color: #008CBA;
+}
+
+#home .mission-vision p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Botón de llamada a la acción (Join) */
+#home .cta {
+    margin-top: 30px;
+}
+
+#home .cta .btn {
     padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.1em;
+    display: inline-block;
+    text-align: center;
 }
 
-/* Participation Page Styles */
-#participation {
-    padding: 50px;
-    background-color: #fff;
+#home .cta .btn:hover {
+    background-color: #005f73;
 }
 
-form {
-    max-width: 500px;
-    margin: 0 auto;
+/* Sección de Preguntas Comunes */
+#home .scenarios {
+    margin-top: 40px;
     text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-form input,
-form select,
-form button {
-    width: 100%;
-    padding: 10px;
+#home .scenarios h2 {
+    font-size: 2em;
+    color: #008CBA;
+}
+
+#home .scenarios ul {
+    list-style: none;
+    padding: 0;
+}
+
+#home .scenarios li {
+    font-size: 1.1em;
+    color: #555;
     margin-bottom: 15px;
 }
 
-.social-media a {
-    color: #4CAF50;
+/* Eventos */
+#events {
+    background-color: white;
+    padding: 30px 10%;
+    text-align: center;
+}
+
+#events h1 {
+    font-size: 2.5em;
+    color: #008CBA;
+}
+
+#events .event-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#events .event-item {
+    width: 280px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#events .event-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#events .event-item h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+#events .event-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+#events .cta {
+    margin-top: 30px;
+}
+
+#events .cta .btn {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
     text-decoration: none;
-    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
 }
 
-/* Usar la fuente "Lora" para los encabezados */
-h1,
-h2,
-h3 {
-    font-family: 'Lora', serif;
+#events .cta .btn:hover {
+    background-color: #005f73;
 }
 
-/* Usar la fuente "Lora" para el texto general */
-body,
-p,
-a {
-    font-family: 'Lora', serif;
+/* Footer */
+footer {
+    background-color: #008CBA;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer .highlight {
+    font-weight: bold;
+}
+
+/* Fondo blanco para la sección de información del sitio */
+#site-info,
+.scenarios,
+.color-scheme,
+.typography {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Medios Responsivos */
+@media (max-width: 768px) {
+
+    /* Estilo para pantallas de tamaño medio (como tabletas) */
+    body {
+        font-size: 14px;
+    }
+
+    #home,
+    #events {
+        padding: 20px 5%;
+    }
+
+    #home h1,
+    #events h1 {
+        font-size: 2em;
+    }
+
+    .event-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Estilo para pantallas pequeñas (como móviles) */
+    body {
+        font-size: 12px;
+    }
+
+    header,
+    footer {
+        padding: 10px 0;
+    }
+
+    #home,
+    #events {
+        padding: 15px 5%;
+    }
+
+    .cta .btn {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+
+    .event-item {
+        width: 100%;
+    }
+
+    .scenarios {
+        width: 90%;
+    }
 }
