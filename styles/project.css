@@ -105,6 +105,7 @@ section {
 .evento img {
     width: 100%;
     max-width: 600px;
+    /* Evita que las imágenes sean demasiado grandes */
     height: auto;
     margin-bottom: 10px;
     display: block;
@@ -112,7 +113,7 @@ section {
     margin-right: auto;
 }
 
-/* Sección de wireframes */
+/* Imágenes generales */
 section img {
     max-width: 100%;
     height: auto;
@@ -132,9 +133,8 @@ footer {
     /* Cambiado de 'fixed' a 'static' */
     width: 100%;
     margin-top: 20px;
-    /* Asegura que haya espacio entre el contenido y el footer */
+    /* Espacio entre el contenido y el footer */
 }
-
 
 /* Diseño responsivo */
 @media (max-width: 768px) {
