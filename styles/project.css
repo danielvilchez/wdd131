@@ -8,8 +8,10 @@
 /* Estilos básicos */
 body {
     font-family: 'Lora', serif;
-    background-color: #e0e0e0;
-    color: #333;
+    background-color: #b0b0b0;
+    /* Gris más oscuro */
+    color: #111;
+    /* Gris más oscuro */
     line-height: 1.6;
 }
 
@@ -23,7 +25,8 @@ p {
 
 /* Header */
 header {
-    background-color: #005f73;
+    background-color: #003c49;
+    /* Azul oscuro */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -35,7 +38,6 @@ header h1 {
 
 header img.logo {
     max-width: 200px;
-    /* Ajustar el tamaño del logo */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -60,9 +62,15 @@ nav ul li a {
     font-size: 1rem;
 }
 
+nav ul li a:hover {
+    color: #d9d9d9;
+    /* Color más claro para el hover */
+}
+
 /* Estilo para los botones */
 button {
-    background-color: #005f73;
+    background-color: #003c49;
+    /* Azul oscuro */
     color: white;
     font-weight: 700;
     padding: 10px 20px;
@@ -105,7 +113,6 @@ section {
 .evento img {
     width: 100%;
     max-width: 600px;
-    /* Evita que las imágenes sean demasiado grandes */
     height: auto;
     margin-bottom: 10px;
     display: block;
@@ -127,13 +134,12 @@ section img {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #005f73;
+    background-color: #003c49;
+    /* Azul oscuro */
     color: white;
     position: static;
-    /* Cambiado de 'fixed' a 'static' */
     width: 100%;
     margin-top: 20px;
-    /* Espacio entre el contenido y el footer */
 }
 
 /* Diseño responsivo */
@@ -169,7 +175,8 @@ footer {
 h2,
 h3 {
     font-size: 1.8rem;
-    color: #005f73;
+    color: #003c49;
+    /* Azul oscuro */
     margin-bottom: 15px;
 }
 
@@ -189,12 +196,15 @@ strong {
 
 /* Estilos para los enlaces */
 a {
-    color: #005f73;
+    color: #003c49;
+    /* Azul oscuro */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #d9d9d9;
+    /* Color más claro para el hover */
 }
 
 /* Estilo de los formularios */
@@ -213,18 +223,16 @@ textarea {
 #counter {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #005f73;
+    color: #003c49;
+    /* Azul oscuro */
 }
 
 /* Estilo para el logo */
 .logo {
     width: 200px;
-    /* Ajusta este valor según el tamaño que prefieras */
     height: auto;
     margin: 20px 0;
-    /* Espaciado arriba y abajo */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* Centra el logo horizontalmente */
 }
