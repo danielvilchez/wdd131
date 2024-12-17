@@ -4,21 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manos Solidarias</title>
-    <meta name="author" content="Daniel G. Vilchez">
-
-    <!-- Añadir fuente -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Estilos y scripts -->
+    <meta name="description" content="Home page of Manos Solidarias">
+    <title>Siteplan - Manos Solidarias</title>
     <link rel="stylesheet" href="styles/project.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
+        <h1>Manos Solidarias</h1>
         <nav>
             <ul>
                 <li><a href="siteplan.html">Home</a></li>
@@ -26,95 +22,78 @@
                 <li><a href="participation.html">Participation</a></li>
             </ul>
         </nav>
-        <!-- <div class="site-name">
-            <h1>Manos Solidarias</h1>
-            <p>A place where social commitment makes a difference.</p>
-        </div>-->
     </header>
 
-    <!-- Sección de la Página de Inicio -->
-    <section id="home">
-        <div class="intro">
-            <h1>Welcome to Manos Solidarias</h1>
-            <p>A place where social commitment makes a difference.</p>
-            <h2>Site Name Explanation:</h2>
-            <p>The name "Manos Solidarias" was chosen to reflect the spirit of
-                solidarity and collaboration in the community. "Manos" (hands) represents the idea of helping and
-                supporting others, while "Solidarias" highlights the importance of mutual aid and social responsibility.
-                The name is intended to convey the mission of the site to promote volunteerism and community
-                development.</p>
-            <h2>Purpose:</h2>
-            <p>This site serves as a hub for social responsibility, promoting volunteerism and
-                community development through various initiatives.</p>
-            <img src="images/logo-manos-solidarias.jpg" alt="Logo de Manos Solidarias">
-        </div>
+    <!-- Main Content -->
+    <section>
+        <h2>Site Name Explanation</h2>
+        <p>The name "Manos Solidarias" was chosen to reflect the spirit of solidarity and collaboration in the
+            community. "Manos" (hands) represents the idea of helping and supporting others, while "Solidarias"
+            highlights the importance of mutual aid and social responsibility. The name is intended to convey the
+            mission of the site to promote volunteerism and community development.</p>
 
-        <div class="mission-vision">
-            <h2>Mission</h2>
-            <p>Promote the spirit of collaboration and mutual aid through volunteer projects that have a positive impact
-                on the community.</p>
+        <h2>Purpose</h2>
+        <p>This site serves as a hub for social responsibility, promoting volunteerism and community development through
+            various initiatives.</p>
 
-            <h2>Vision</h2>
-            <p>To be a benchmark for community work, where each volunteer feels that their contribution generates real
-                change.</p>
-        </div>
+        <!-- Moved Logo -->
+        <img class="logo" src="images/logo-manos-solidarias.jpg" alt="Manos Solidarias Logo">
 
-        <div class="cta">
-            <h3>Join us and make a difference!</h3>
-            <a href="participation.html" class="btn">Register</a>
-        </div>
-    </section>
+        <h2>Mission</h2>
+        <p>Promote the spirit of collaboration and mutual aid through volunteer projects that have a positive impact on
+            the community.</p>
 
-    <!-- Escenarios -->
-    <section class="scenarios">
+        <h2>Vision</h2>
+        <p>To be a benchmark for community work, where each volunteer feels that their contribution generates real
+            change.</p>
+
+        <h2>Join us and make a difference!</h2>
+        <button><a href="participation.html">Register</a></button>
+
         <h2>Scenarios</h2>
-        <div class="question-answer">
-            <p><strong>What is Manos Solidarias?</strong></p>
-            <p>A community-driven initiative focused on volunteer work and mutual aid.</p>
-        </div>
-        <div class="question-answer">
-            <p><strong>How can I get involved?</strong></p>
-            <p>You can participate by registering as a volunteer or donating to our causes.</p>
-        </div>
-    </section>
+        <h3>What is Manos Solidarias?</h3>
+        <p>A community-driven initiative focused on volunteer work and mutual aid.</p>
 
-    <!-- Esquema de colores -->
-    <section class="color-scheme">
+        <h3>How can I get involved?</h3>
+        <p>You can participate by registering as a volunteer or donating to our causes.</p>
+
         <h2>Color Scheme</h2>
-        <p><strong>Primary Color:</strong> #005f73 (Used for headers, buttons, and accents)</p>
-        <p><strong>Secondary Color:</strong> #e0e0e0 (Used for the background)</p>
-    </section>
+        <p>Primary Color: #005f73 (Used for headers, buttons, and accents)</p>
+        <p>Secondary Color: #e0e0e0 (Used for the background)</p>
 
-    <!-- Tipografía -->
-    <section class="typography">
         <h2>Typography</h2>
-        <p><strong>Font Family:</strong> 'Lora', serif (Used for body text and headings)</p>
-        <p><strong>Headings:</strong> Bold, 700 weight</p>
-        <p><strong>Body Text:</strong> Regular, 400 weight</p>
-    </section>
+        <p>Font Family: 'Lora', serif (Used for body text and headings)</p>
+        <p>Headings: Bold, 700 weight</p>
+        <p>Body Text: Regular, 400 weight</p>
 
-
-    <!-- Diagrama de estructura alámbrica -->
-    <section class="wireframes">
         <h2>Wireframes</h2>
         <p>Wireframe for mobile and desktop views:</p>
-        <h3>Home Page:</h3>
-        <img src="images/home-mobile.png" alt="Wireframe Mobile View - Home">
-        <img src="images/home-desktop.png" alt="Wireframe Desktop View - Home">
+        <section>
+            <!-- Wireframe de la página de inicio -->
+            <h3>Página de Inicio</h3>
+            <img src="images/home-mobile.png" alt="Wireframe móvil de la página de inicio" loading="lazy">
+            <img src="images/home-desktop.png" alt="Wireframe de escritorio de la página de inicio" loading="lazy">
 
-        <h3>Events Page:</h3>
-        <img src="images/events-mobile.png" alt="Wireframe Mobile View - Events">
-        <img src="images/events-desktop.png" alt="Wireframe Desktop View - Events">
+            <!-- Wireframe de la página de eventos -->
+            <h3>Página de Eventos</h3>
+            <img src="images/events-mobile.png" alt="Wireframe móvil de la página de eventos" loading="lazy">
+            <img src="images/events-desktop.png" alt="Wireframe de escritorio de la página de eventos" loading="lazy">
 
-        <h3>Participation Page:</h3>
-        <img src="images/participation-mobile.png" alt="Wireframe Mobile View - Participation">
-        <img src="images/participation-desktop.png" alt="Wireframe Desktop View - Participation">
+            <!-- Wireframe de la página de participación -->
+            <h3>Página de Participación</h3>
+            <img src="images/participation-mobile.png" alt="Wireframe móvil de la página de participación"
+                loading="lazy">
+            <img src="images/participation-desktop.png" alt="Wireframe de escritorio de la página de participación"
+                loading="lazy">
+        </section>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p><span id="currentyear"></span> ⭐ Daniel Vilchez Cardenas ⭐ Lima, Perú. </p>
         <p class="highlight" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
     </footer>
+
 </body>
 
 </html>

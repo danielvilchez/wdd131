@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos - Manos Solidarias</title>
-    <meta name="author" content="Daniel G. Vilchez">
-
-    <!-- Añadir fuente -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Estilos y scripts -->
+    <meta name="description" content="Events of Manos Solidarias">
+    <title>Events - Manos Solidarias</title>
     <link rel="stylesheet" href="styles/project.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
+        <h1>Manos Solidarias</h1>
         <nav>
             <ul>
                 <li><a href="siteplan.html">Home</a></li>
@@ -26,51 +22,48 @@
                 <li><a href="participation.html">Participation</a></li>
             </ul>
         </nav>
-        <div class="site-name">
-            <h1>Manos Solidarias</h1>
-            <p>Participate, help and make a difference!</p>
-        </div>
     </header>
 
-    <section id="events">
-        <h1>Upcoming Events</h1>
+    <!-- Main Content -->
+    <section>
+        <h2>Upcoming Events</h2>
+        <!-- Moved Logo -->
+        <img class="logo" src="images/logo-manos-solidarias.jpg" alt="Manos Solidarias Logo" loading="lazy">
 
-        <div class="event-list">
-            <!-- Ejemplo de Evento 1 -->
-            <div class="event-item">
-                <img src="images/event1.jpg" alt="Evento 1">
-                <h2>Clothing Collection Event</h2>
-                <p> Help us collect clothes for those most in need!</p>
-                <p>Date: December 20, 2024</p>
-            </div>
-
-            <!-- Ejemplo de Evento 2 -->
-            <div class="event-item">
-                <img src="images/event2.jpg" alt="Evento 2">
-                <h2>Let's clean up the park</h2>
-                <p>Take part in our central park cleaning and beautification day.</p>
-                <p>Date: December 20, 2024</p>
-            </div>
-
-            <!-- Ejemplo de Evento 3 -->
-            <div class="event-item">
-                <img src="images/event3.jpg" alt="Evento 3">
-                <h2>Reforestation Campaign</h2>
-                <p>Help us reforest green areas and improve the environment.</p>
-                <p>Date: December 25, 2024</p>
-            </div>
+        <div class="evento">
+            <h3>Event 1: Clothing Collection Event</h3>
+            <p>Help us collect clothes for those most in need!</p>
+            <p>Date: December 20, 2024</p>
+            <img src="images/event1.jpg" alt="Community Cleanup" loading="lazy">
         </div>
 
-        <div class="cta">
-            <h3>Are you interested in participating?</h3>
-            <a href="participation.html" class="btn">Register now</a>
+        <div class="evento">
+            <h3>Event 2: Let's clean up the park</h3>
+            <p>Take part in our central park cleaning and beatication day.</p>
+            <p>Date: December 20, 2024</p>
+            <img src="images/event2.jpg" alt="Food Drive" loading="lazy">
         </div>
+
+        <div class="evento">
+            <h3>Event 3: Reforestation Campaign</h3>
+            <p>Help us reforest green areas and improve the environment.</p>
+            <p>Date: December 20, 2024</p>
+            <img src="images/event3.jpg" alt="Blood Donation" loading="lazy">
+        </div>
+
+        <h2>How to Participate</h2>
+        <p>If you would like to participate in any of our events, please <a href="participation.html">register as a
+                volunteer</a>.</p>
+
+
     </section>
 
+    <!-- Footer -->
     <footer>
         <p><span id="currentyear"></span> ⭐ Daniel Vilchez Cardenas ⭐ Lima, Perú. </p>
-        <p class="highlight" id="lastModified">Última Modificación: 01/01/1970 12:00:00</p>
+        <p class="highlight" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
     </footer>
+
 </body>
 
 </html>

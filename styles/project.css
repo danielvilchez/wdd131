@@ -1,280 +1,230 @@
-/* Estilos generales */
+/* Reset de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos */
 body {
     font-family: 'Lora', serif;
     background-color: #e0e0e0;
-    /* Fondo más oscuro para mejorar el contraste */
     color: #333;
-    /* Color de texto más oscuro */
-    margin: 0;
-    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilos generales de texto */
+h1,
+h2,
+h3,
+p {
     text-align: center;
 }
 
+/* Header */
 header {
     background-color: #005f73;
-    /* Azul más oscuro para mejorar el contraste */
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
+header h1 {
+    font-size: 2.5rem;
+}
+
+header img.logo {
+    max-width: 200px;
+    /* Ajustar el tamaño del logo */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Navegación */
 nav ul {
     list-style: none;
-    padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: white;
-    font-weight: bold;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
-/* Sección de la Página de Inicio */
-#home {
-    background-color: white;
-    padding: 30px 10%;
-    text-align: center;
-}
-
-#home .intro {
-    margin-bottom: 20px;
-}
-
-#home h1 {
-    font-size: 2.5em;
-    color: #005f73;
-    /* Azul más oscuro para el encabezado */
-}
-
-#home p {
-    font-size: 1.2em;
-    color: #333;
-    /* Texto oscuro para mejorar la legibilidad */
-}
-
-#home img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    width: 200px;
-    margin-bottom: 20px;
-}
-
-/* Misión y Visión */
-#home .mission-vision {
-    margin-top: 40px;
-}
-
-#home .mission-vision h2 {
-    font-size: 2em;
-    color: #005f73;
-    /* Azul más oscuro */
-}
-
-#home .mission-vision p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Botón de llamada a la acción (Join) */
-#home .cta {
-    margin-top: 30px;
-}
-
-#home .cta .btn {
-    padding: 10px 20px;
+/* Estilo para los botones */
+button {
     background-color: #005f73;
-    /* Azul más oscuro */
     color: white;
-    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
-    font-size: 1.1em;
-    display: inline-block;
-    text-align: center;
-}
-
-#home .cta .btn:hover {
-    background-color: #004051;
-    /* Azul aún más oscuro para el hover */
-}
-
-/* Sección de Preguntas Comunes */
-#home .scenarios {
-    margin-top: 40px;
-    text-align: left;
-    width: 80%;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#home .scenarios h2 {
-    font-size: 2em;
-    color: #005f73;
-    /* Azul más oscuro */
-}
-
-#home .scenarios ul {
-    list-style: none;
-    padding: 0;
-}
-
-#home .scenarios li {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-/* Eventos */
-#events {
-    background-color: white;
-    padding: 30px 10%;
-    text-align: center;
-}
-
-#events h1 {
-    font-size: 2.5em;
-    color: #005f73;
-    /* Azul más oscuro */
-}
-
-#events .event-list {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#events .event-item {
-    width: 280px;
-    margin: 20px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#events .event-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-#events .event-item h2 {
-    font-size: 1.8em;
-    color: #333;
-}
-
-#events .event-item p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-#events .cta {
-    margin-top: 30px;
-}
-
-#events .cta .btn {
-    padding: 10px 20px;
-    background-color: #005f73;
-    /* Azul más oscuro */
+button a {
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1em;
 }
 
-#events .cta .btn:hover {
-    background-color: #004051;
-    /* Azul más oscuro para el hover */
+/* Sección general */
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-/* Footer */
+/* Sección de eventos */
+.evento {
+    margin-bottom: 30px;
+}
+
+.evento h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.evento p {
+    font-size: 1rem;
+}
+
+.evento img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sección de wireframes */
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sección de pie de página */
 footer {
-    background-color: #005f73;
-    /* Azul más oscuro */
-    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    background-color: #005f73;
+    color: white;
+    position: static;
+    /* Cambiado de 'fixed' a 'static' */
+    width: 100%;
+    margin-top: 20px;
+    /* Asegura que haya espacio entre el contenido y el footer */
 }
 
-footer p {
-    font-size: 1em;
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .evento img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        position: static;
+    }
 }
 
-footer .highlight {
+/* Estilo para los títulos */
+h2,
+h3 {
+    font-size: 1.8rem;
+    color: #005f73;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+strong {
     font-weight: bold;
 }
 
-/* Fondo blanco para la sección de información del sitio */
-#site-info,
-.scenarios,
-.color-scheme,
-.typography {
-    background-color: transparent;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: none;
-    text-align: center;
+/* Estilos para los enlaces */
+a {
+    color: #005f73;
+    text-decoration: none;
 }
 
-/* Medios Responsivos */
-@media (max-width: 768px) {
-
-    /* Estilo para pantallas de tamaño medio (como tabletas) */
-    body {
-        font-size: 14px;
-    }
-
-    #home,
-    #events {
-        padding: 20px 5%;
-    }
-
-    #home h1,
-    #events h1 {
-        font-size: 2em;
-    }
-
-    .event-item {
-        width: 90%;
-    }
+a:hover {
+    text-decoration: underline;
 }
 
-@media (max-width: 480px) {
+/* Estilo de los formularios */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
 
-    /* Estilo para pantallas pequeñas (como móviles) */
-    body {
-        font-size: 12px;
-    }
+/* Estilo para los contadores */
+#counter {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #005f73;
+}
 
-    header,
-    footer {
-        padding: 10px 0;
-    }
-
-    #home,
-    #events {
-        padding: 15px 5%;
-    }
-
-    .cta .btn {
-        padding: 8px 15px;
-        font-size: 1em;
-    }
-
-    .event-item {
-        width: 100%;
-    }
-
-    .scenarios {
-        width: 90%;
-    }
+/* Estilo para el logo */
+.logo {
+    width: 200px;
+    /* Ajusta este valor según el tamaño que prefieras */
+    height: auto;
+    margin: 20px 0;
+    /* Espaciado arriba y abajo */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Centra el logo horizontalmente */
 }
