@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Join Manos Solidarias and make a difference in your community! Volunteer for different causes.">
-    <title>Manos Solidarias - Participate</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <title>Participation - Manos Solidarias</title>
     <link rel="stylesheet" href="styles/project.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/project.js" defer></script>
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
         <h1>Manos Solidarias</h1>
         <nav>
@@ -25,50 +24,44 @@
         </nav>
     </header>
 
+    <!-- Main Content -->
     <section>
-        <h2>How to Participate</h2>
+        <h2>Join Our Cause!</h2>
+        <p>Register as a volunteer and help us make a difference in our community.</p>
 
+        <form id="participationForm">
+            <!-- Nombre del Participante -->
+            <label for="participantName">Participant Name:</label>
+            <input type="text" id="participantName" name="participantName" placeholder="Enter your name" required>
 
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required>
+            <!-- Email -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label>Choose one of our upcoming events to volunteer for. Your help is vital to making a positive impact on the
-            community.</label>
-
-        <form action="#" method="POST">
-            <label for="events">Select an Event:</label>
-            <select id="events" name="events">
-                <option value="food_drive">Clothing Collection Event</option>
-                <option value="clean_up">Let's clean up the park</option>
-                <option value="fundraising">Reforestation Campaign</option>
+            <!-- Selección de Evento -->
+            <label for="eventSelection">Select an Event:</label>
+            <select id="eventSelection" name="eventSelection" required>
+                <option value="" disabled selected>Select an event</option>
+                <option value="clothingDrive">Clothing Collection </option>
+                <option value="parkCleanup">Let's Clean Up the Park</option>
+                <option value="reforestationCampaign">Reforestation Campaign</option>
             </select>
 
+            <!-- Botón de Enviar -->
             <button type="submit">Submit</button>
         </form>
 
-        <div id="counter">
-            <p>Total Participants: <span id="counterValue">0</span></p>
-        </div>
+        <p>Total Participations: <span id="counterValue">0</span></p>
+
+        <h3>Registered Participants</h3>
+        <ul id="participantList"></ul>
     </section>
 
-    <!-- Social media links -->
-    <section>
-        <p>Follow us on social media:</p>
-        <p>
-            <a href="https://facebook.com" target="_blank">Facebook</a> |
-            <a href="https://instagram.com" target="_blank">Instagram</a> |
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-        </p>
-    </section>
-
+    <!-- Footer -->
     <footer>
         <p><span id="currentyear"></span> ⭐ Daniel Vilchez Cardenas ⭐ Lima, Perú. </p>
-        <p class="highlight" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+        <p id="lastModified">Last Modification: </p>
     </footer>
-
 
 </body>
 
